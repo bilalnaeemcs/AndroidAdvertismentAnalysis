@@ -5,9 +5,7 @@ from airtest.core.api import *
 from airtest.cli.parser import cli_setup
 
 if not cli_setup():
-    auto_setup(__file__, logdir=True, devices=[
-            "android://127.0.0.1:5037/192.168.123.104:5555?cap_method=JAVACAP&&ori_method=ADBORI&&touch_method=ADBTOUCH",
-    ])
+    auto_setup(__file__, logdir=True)
 
 
 # script content
